@@ -6,6 +6,7 @@ import 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 import HomeScreen from './src/screen/HomeScreen';
 import Profile from './src/screen/Profile';
+import NotificationScreen from './src/screen/NotificationScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,6 +28,16 @@ const App = () => {
             tabBarLabel: 'Trang Chủ',
             tabBarIcon: ({color}) => (
               <Icon name="md-home" color={color} size={24} />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Notification"
+          component={NotificationScreen}
+          options={{
+            tabBarLabel: 'Thông Báo',
+            tabBarIcon: ({color}) => (
+              <Icon name="md-notifications-outline" color={color} size={24} />
             ),
           }}
         />

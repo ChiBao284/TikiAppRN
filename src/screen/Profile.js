@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text, ScrollView} from 'react-native';
 
+import HeaderComponents from '../components/HeaderComponents';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -17,22 +18,7 @@ const Profile = () => {
   return (
     <ScrollView style={styles.screenContainer}>
       {/*  */}
-      <View style={styles.headerContainer}>
-        {/*  */}
-        <View style={styles.cartContainer}>
-          <View style={styles.cartIcon} />
-        </View>
-        {/*  */}
-        <Text style={styles.headerText}>Cá nhân</Text>
-        {/*  */}
-        <View style={styles.cartContainer}>
-          <FontAwesome
-            name="shopping-cart"
-            size={HEADER_ICON_SIZE}
-            color="#fff"
-          />
-        </View>
-      </View>
+      <HeaderComponents name="Cá Nhân" />
       {/*  */}
       <View style={styles.bodyContainer}>
         <View style={styles.userContainer}>

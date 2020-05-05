@@ -31,7 +31,7 @@ const Product = ({image, name, price}) => {
   );
 };
 
-export default class Home extends Component {
+export default class HomeContainer extends Component {
   render() {
     return (
       <View>
